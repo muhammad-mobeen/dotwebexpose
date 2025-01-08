@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/", "dest": "/1.html" },
+    { "src": "/1", "dest": "/1.html" },
+    { "src": "/2", "dest": "/2.html" },
+    { "src": "/3", "dest": "/3.html" },
+    { "src": "/4", "dest": "/4.html" },
+    { "src": "/5", "dest": "/5.html" },
+    { "src": "/6", "dest": "/6.html" },
+    { "src": "/7", "dest": "/7.html" },
+    { "src": "/8", "dest": "/8.html" },
+    { "src": "/9", "dest": "/9.html" }
+  ],
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ]
+}
