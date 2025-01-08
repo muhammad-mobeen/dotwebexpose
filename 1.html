@@ -3,7 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/Helvetica.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/Helvetica-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/helvetica-light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
         html, body {
             margin: 0;
             padding: 0;
@@ -15,12 +34,84 @@
             height: 1754px;
             background-color: #FFFFFF;
             margin: 0 auto;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 56px;
+            left: 885px;
+            width: 289px;
+            height: 88px;
+        }
+        .main-image {
+            position: absolute;
+            top: 199px;
+            left: 109px;
+            width: 1131px;
+            height: 1414px;
+        }
+        .title {
+            position: absolute;
+            top: 66px;
+            left: 108px;
+            width: 126px;
+            height: 37.56px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 37.56px;
+            letter-spacing: -0.96px; /* -3% of 32px */
+            color: #1F2A44;
+        }
+        .subtitle {
+            position: absolute;
+            top: 100.59px;
+            left: 109px;
+            width: 169px;
+            height: 37.56px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 37.56px;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #1F2A44;
+        }
+        .address {
+            position: absolute;
+            top: 131.23px;
+            left: 109px;
+            width: 204px;
+            height: 37.56px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 37.56px;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #1F2A44;
+        }
+        .company {
+            position: absolute;
+            top: 1664.44px;
+            left: 109px;
+            width: 268px;
+            height: 37.56px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 37.56px;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #1F2A44;
         }
     </style>
 </head>
 <body>
     <div class="page">
-        <h1>Page 1</h1>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <img src="images/image1.png" alt="Main Image" class="main-image">
+        <div class="title">Exposé</div>
+        <div class="subtitle">Musterstraße 23</div>
+        <div class="address">50123 Musterstadt</div>
+        <div class="company">IMMOIQ Immobilien GmbH</div>
     </div>
 </body>
 </html>
