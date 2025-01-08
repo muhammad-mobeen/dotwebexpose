@@ -3,6 +3,7 @@
   "routes": [
     { "src": "/", "dest": "/1.html" },
     { "src": "/1", "dest": "/1.html" },
+    { "src": "/images/(.*)", "dest": "/images/$1" },
     { "src": "/2", "dest": "/2.html" },
     { "src": "/3", "dest": "/3.html" },
     { "src": "/4", "dest": "/4.html" },
@@ -15,6 +16,10 @@
   "builds": [
     {
       "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "images/**/*",
       "use": "@vercel/static"
     }
   ]
