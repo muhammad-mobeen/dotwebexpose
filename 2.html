@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <title>Page 2</title>
     <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/Helvetica.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/Helvetica-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/helvetica-light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
         html, body {
             margin: 0;
             padding: 0;
@@ -15,12 +33,20 @@
             height: 1754px;
             background-color: #FFFFFF;
             margin: 0 auto;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 56px;
+            left: 885px;
+            width: 289px;
+            height: 88px;
         }
     </style>
 </head>
 <body>
     <div class="page">
-        <h1>Page 2</h1>
+        <img src="images/logo.png" alt="Logo" class="logo">
     </div>
 </body>
 </html>
