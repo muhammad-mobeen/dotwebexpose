@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Helvetica';
@@ -25,7 +26,8 @@
         html, body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            height: 100%;
+            overflow-y: auto;
             background-color: gray;
         }
         .page {
@@ -34,6 +36,7 @@
             background-color: #FFFFFF;
             margin: 0 auto;
             position: relative;
+            overflow-y: auto;
         }
         .logo {
             position: absolute;
@@ -42,11 +45,176 @@
             width: 289px;
             height: 88px;
         }
+        .title {
+            position: absolute;
+            top: 226px;
+            left: 107px;
+            width: 952px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 38px;
+            letter-spacing: -0.75px; /* -3% of 25px */
+            color: #1F2A44;
+        }
+        .description {
+            position: absolute;
+            top: 286px;
+            left: 107px;
+            width: 1067px;
+            height: 403px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .features-section {
+            position: absolute;
+            top: 784px;
+            left: 95px;
+            width: 1091px;
+            height: 189px;
+        }
+        .features-title {
+            position: absolute;
+            top: 784px;
+            left: 107px;
+            width: 952px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 38px;
+            letter-spacing: -0.75px; /* -3% of 25px */
+            color: #1F2A44;
+        }
+        .features-column-left {
+            position: absolute;
+            top: 846px;
+            left: 95px;
+            width: 516px;
+            height: 123px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .features-column-right {
+            position: absolute;
+            top: 846px;
+            left: 685px;
+            width: 516px;
+            height: 123px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .features-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .features-list li {
+            display: flex;
+            align-items: center;
+            line-height: 140%;
+            letter-spacing: -0.66px;
+        }
+        .features-list li::before {
+            content: '•';
+            font-size: 1em;
+            margin-right: 10px;
+            margin-left: -20px;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        .page-number {
+            position: absolute;
+            top: 1653px;
+            left: 1038px;
+            width: 113px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 38px;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #1F2A44;
+            text-align: right;
+        }
+        .contact-phone {
+            position: absolute;
+            top: 1641px;
+            left: 89px;
+            width: 352px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: 0;
+            color: #1F2A44;
+        }
+        .contact-email {
+            position: absolute;
+            top: 1662px;
+            left: 89px;
+            width: 352px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: 0;
+            color: #1F2A44;
+        }
     </style>
 </head>
 <body>
     <div class="page">
         <img src="images/logo.png" alt="Logo" class="logo">
+        <div class="title">Hochwertiges Stadthaus mit Platz für die ganze Familie</div>
+        <div class="description">Dieses einzigartige Liebhaberstück lässt keine Wünsche offen.<br>
+Das 2015 erbaute Stadthaus befindet sich in einer ruhigen Seitenstraße mitten in Köln.<br>
+Mit ca. 198 m² Wohnfläche auf einem ca. 118 m² großen Grundstück befindet sich das Haus in begehrter Lage.<br><br>
+
+Das Haus ist mit hochwertigen Fußböden und Bädern ausgestattet und wird in diesem Gesamtpaket verkauft.<br>
+Die Einbauküche ist ebenfalls im Kaufpreis enthalten.<br>
+Neben elektrischen Rolläden und einer Alarmanlage finden Sie im gesamten Haus die neusten Technologien.<br><br>
+
+Im Erdgeschoss sind Koch-, Wohn- und Essbereich offen auf einer Etage vereint mit direktem Zugang zum großzügigen Garten mit Terrasse und eingebautem Pool hinter dem Haus.<br><br>
+
+In der ersten Etage finden Sie Platz für ein Kinderzimmer, ein Büro oder Hobbyraum und ein großes Duschbadezimmer.<br>
+Das Dachgeschoss ist Ihr Rückzugsort und bietet zwei Schlafzimmer und ein Badezimmer.</div>
+        <div class="features-section"></div>
+        <div class="features-title">Ausstattung</div>
+        <div class="features-column-left">
+            <ul class="features-list">
+                <li>Hochwertige Ausstattung</li>
+                <li>Moderne Einbauküche</li>
+                <li>Elektrische Rolläden auf jeder Etage</li>
+                <li>Offener Koch-, Wohn- und Essbereich</li>
+            </ul>
+        </div>
+        <div class="features-column-right">
+            <ul class="features-list">
+                <li>Großzügiger Garten mit Pool</li>
+                <li>Große Terrasse</li>
+                <li>Verputzte Wände</li>
+                <li>Gasheizung</li>
+            </ul>
+        </div>
+        <div class="page-number">Seite 2/9</div>
+        <div class="contact-phone">+41 22 123 45 67</div>
+        <div class="contact-email">max.makler@immoiq.ch</div>
     </div>
 </body>
 </html>
