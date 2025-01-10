@@ -14,16 +14,200 @@
         .page {
             width: 1240px;
             height: 1754px;
-            background-color: #FFFFFF;
+            background-color: #DFD8D0;
             margin: 0 auto;
             position: relative;
             overflow-y: auto;
+        }
+        @font-face {
+          font-family: "Helvetica";
+          src: url("/fonts/helvetica-light.ttf") format("truetype");
+          font-weight: 300;
+          font-style: normal;
+        }
+        .contact-header {
+          position: absolute;
+          top: 90px;
+          left: 106px;
+          width: 291px;
+          height: 38px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 32px;
+          line-height: normal;
+          letter-spacing: -0.96px; /* -3% of 32px */
+          color: #1F2A44;
+        }
+        .about-image {
+          position: absolute;
+          top: 398px;
+          left: 168px;
+          width: 418px;
+          height: 418px;
+          border-radius: 5px;
+          object-fit: cover;
+        }
+        .contact-name {
+          position: absolute;
+          top: 504px;
+          left: 632px;
+          width: 291px;
+          height: 38px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: bold;
+          font-size: 32px;
+          line-height: normal;
+          letter-spacing: -0.96px; /* -3% of 32px */
+          color: #1F2A44;
+        }
+        .company-name {
+          position: absolute;
+          top: 550px;
+          left: 633px;
+          width: 343px;
+          height: 38px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: normal;
+          letter-spacing: -0.54px; /* -3% of 18px */
+          color: #1F2A44;
+        }
+        .contact-info-box {
+          position: absolute;
+          top: 607px;
+          left: 633px;
+          width: 407px;
+          height: 103px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .contact-info-icon {
+          width: 18px;
+          height: 18px;
+          margin-right: 10px;
+        }
+        .contact-info-row {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+        .contact-info-address {
+          width: 381px;
+          height: 16px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: normal;
+          letter-spacing: 0;
+          color: #1F2A44;
+        }
+        .contact-info-email {
+          width: 381px;
+          height: 16px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: normal;
+          letter-spacing: 0;
+          color: #1F2A44;
+        }
+        .contact-info-phone {
+          width: 381px;
+          height: 16px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: normal;
+          letter-spacing: 0;
+          color: #1F2A44;
+        }
+        .contact-info-website {
+          width: 381px;
+          height: 16px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 18px;
+          line-height: normal;
+          letter-spacing: 0;
+          color: #1F2A44;
+        }
+        .legal-notice-section {
+          position: absolute;
+          top: 1263px;
+          left: 154px;
+          width: 933px;
+          height: 264px;
+          display: flex;
+          flex-direction: column;
+        }
+        .legal-notice-title {
+          width: 291px;
+          height: 38px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: bold;
+          font-size: 32px;
+          line-height: normal;
+          letter-spacing: -0.96px; /* -3% of 32px */
+          color: #ACA6A0;
+          margin-bottom: 28px;
+        }
+        .legal-notice-paragraph {
+          width: 933px;
+          height: 198px;
+          font-family: 'Helvetica', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 19px;
+          line-height: normal;
+          letter-spacing: -0.57px; /* -3% of 19px */
+          color: #ACA6A0;
+          text-align: justify;
+          word-break: keep-all;
+          overflow-wrap: normal;
+        }
+        .page-logo {
+          position: absolute;
+          top: 1590px;
+          left: 499px;
+          width: 243px;
+          height: 74px;
         }
     </style>
 </head>
 <body>
     <div class="page">
-        <h1>Page 9</h1>
+        <div class="contact-header">Ihr Ansprechpartner</div>
+        <img class="about-image" src="images/about.png">
+        <div class="contact-name">Stefan Huber</div>
+        <div class="company-name">ImmoIQ AG</div>
+        <div class="contact-info-box">
+          <div class="contact-info-row">
+            <img class="contact-info-icon" src="images/location.png">
+            <div class="contact-info-address">Seestrasse 12, 8002 Zürich</div>
+          </div>
+          <div class="contact-info-row">
+            <img class="contact-info-icon" src="images/email.png">
+            <div class="contact-info-email">stefan.huber@immoiq.ch</div>
+          </div>
+          <div class="contact-info-row">
+            <img class="contact-info-icon" src="images/phone.png">
+            <div class="contact-info-phone">+41 44 345 6</div>
+          </div>
+          <div class="contact-info-row">
+            <img class="contact-info-icon" src="images/website.png">
+            <div class="contact-info-website">www.immoiq.ch</div>
+          </div>
+        </div>
+        <div class="legal-notice-section">
+          <div class="legal-notice-title">Rechtshinweis</div>
+          <div class="legal-notice-paragraph">Alle Angaben basieren auf den vom Eigentümer zur Verfügung gestellten Informationen. Eine Haftung für die Richtigkeit und Vollständigkeit wird ausdrücklich ausgeschlossen.
+<br/><br/>
+Dieses Exposé ist vertraulich und ausschliesslich für den Empfänger bestimmt. Die Weitergabe an Dritte bedarf unserer schriftlichen Zustimmung. Der Maklervertrag gilt als anerkannt. Sämtliche Verhandlungen sind direkt mit uns zu führen.
+<br/><br/>
+Bei Missachtung dieser Bestimmungen behalten wir uns die Geltendmachung von Schadenersatzansprüchen vor. Ein Zwischenverkauf oder -vermietung sowie Änderungen bleiben vorbehalten.</div>
+        </div>
+        <img class="page-logo" src="images/logo.png">
     </div>
 </body>
 </html>
