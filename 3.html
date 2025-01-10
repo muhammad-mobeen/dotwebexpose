@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 3</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <style>
         @font-face {
             font-family: 'Helvetica';
@@ -20,6 +20,18 @@
         @font-face {
             font-family: 'Helvetica';
             src: url('/fonts/helvetica-light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Roboto';
+            src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Roboto';
+            src: url('/fonts/Roboto-Light.ttf') format('truetype');
             font-weight: 300;
             font-style: normal;
         }
@@ -85,6 +97,475 @@
             letter-spacing: 0;
             color: #1F2A44;
         }
+        .two-column-row {
+            position: absolute;
+            top: 287px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .left-column-text {
+            position: absolute;
+            top: 286px;
+            left: 110px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .right-column-text {
+            position: absolute;
+            top: 286px;
+            left: 530px;
+            width: 149px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .divider-line {
+            position: absolute;
+            top: 326px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .objektdaten-title {
+            position: absolute;
+            top: 226px;
+            left: 109px;
+            width: 952px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 38px;
+            letter-spacing: -0.75px; /* -3% of 25px */
+            color: #1F2A44;
+        }
+        .second-column-row {
+            position: absolute;
+            top: 340px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .second-left-column-text {
+            position: absolute;
+            top: 339px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .second-right-column-text {
+            position: absolute;
+            top: 339px;
+            left: 529px;
+            width: 149px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .second-divider-line {
+            position: absolute;
+            top: 378px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .third-column-row {
+            position: absolute;
+            top: 393px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .third-left-column-text {
+            position: absolute;
+            top: 394px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .third-right-column-text {
+            position: absolute;
+            top: 394px;
+            left: 529px;
+            width: 149px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .third-divider-line {
+            position: absolute;
+            top: 433px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .fourth-column-row {
+            position: absolute;
+            top: 446px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .fourth-left-column-text {
+            position: absolute;
+            top: 446px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .fourth-right-column-text {
+            position: absolute;
+            top: 446px;
+            left: 529px;
+            width: 149px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .fourth-divider-line {
+            position: absolute;
+            top: 485px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .fifth-column-row {
+            position: absolute;
+            top: 499px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .fifth-left-column-text {
+            position: absolute;
+            top: 499px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .fifth-right-column-text {
+            position: absolute;
+            top: 499px;
+            left: 529px;
+            width: 149px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .fifth-divider-line {
+            position: absolute;
+            top: 538px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .sixth-column-row {
+            position: absolute;
+            top: 552px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .sixth-left-column-text {
+            position: absolute;
+            top: 552px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .sixth-right-column-text {
+            position: absolute;
+            top: 552px;
+            left: 529px;
+            width: 149px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .sixth-divider-line {
+            position: absolute;
+            top: 591px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .seventh-column-row {
+            position: absolute;
+            top: 605px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .seventh-left-column-text {
+            position: absolute;
+            top: 605px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .seventh-right-column-text {
+            position: absolute;
+            top: 605px;
+            left: 529px;
+            width: 300px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+            white-space: nowrap;
+        }
+        .seventh-divider-line {
+            position: absolute;
+            top: 644px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .eighth-column-row {
+            position: absolute;
+            top: 658px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .eighth-left-column-text {
+            position: absolute;
+            top: 658px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .eighth-right-column-text {
+            position: absolute;
+            top: 658px;
+            left: 529px;
+            width: 300px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+            white-space: nowrap;
+        }
+        .eighth-divider-line {
+            position: absolute;
+            top: 697px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .ninth-column-row {
+            position: absolute;
+            top: 711px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .ninth-left-column-text {
+            position: absolute;
+            top: 711px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .ninth-right-column-text {
+            position: absolute;
+            top: 711px;
+            left: 529px;
+            width: 300px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+            white-space: nowrap;
+        }
+        .ninth-divider-line {
+            position: absolute;
+            top: 750px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .tenth-column-row {
+            position: absolute;
+            top: 764px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .tenth-left-column-text {
+            position: absolute;
+            top: 764px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .tenth-right-column-text {
+            position: absolute;
+            top: 764px;
+            left: 529px;
+            width: 500px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+            white-space: nowrap;
+        }
+        .tenth-divider-line {
+            position: absolute;
+            top: 803px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
+        .kaufpreis-column-row {
+            position: absolute;
+            top: 949px;
+            left: 100px;
+            width: 1070px;
+            height: 39px;
+            display: flex;
+        }
+        .kaufpreis-left-column-text {
+            position: absolute;
+            top: 949px;
+            left: 109px;
+            width: 83px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+        }
+        .kaufpreis-right-column-text {
+            position: absolute;
+            top: 949px;
+            left: 529px;
+            width: 300px;
+            height: 31px;
+            font-family: 'Roboto', Arial, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 140%;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #2F2F2F;
+            white-space: nowrap;
+        }
+        .kaufpreis-divider-line {
+            position: absolute;
+            top: 988px;
+            left: 100px;
+            width: 1070px;
+            border-top: 1px solid #DCD9D4;
+        }
     </style>
 </head>
 <body>
@@ -93,6 +574,52 @@
         <div class="page-number">Seite 3/9</div>
         <div class="contact-phone">+41 22 123 45 67</div>
         <div class="contact-email">max.makler@immoiq.ch</div>
+        <div class="objektdaten-title">Objektdaten</div>
+        <div class="two-column-row"></div>
+        <div class="left-column-text">Objektart</div>
+        <div class="right-column-text">Einfamilienhaus</div>
+        <div class="divider-line"></div>
+        <div class="second-column-row"></div>
+        <div class="second-left-column-text">Wohnfläche</div>
+        <div class="second-right-column-text">ca. 198 m²</div>
+        <div class="second-divider-line"></div>
+        <div class="third-column-row"></div>
+        <div class="third-left-column-text">Grundstück</div>
+        <div class="third-right-column-text">ca. 118 m²</div>
+        <div class="third-divider-line"></div>
+        <div class="fourth-column-row"></div>
+        <div class="fourth-left-column-text">Etagen</div>
+        <div class="fourth-right-column-text">3</div>
+        <div class="fourth-divider-line"></div>
+        <div class="fifth-column-row"></div>
+        <div class="fifth-left-column-text">Flurstück</div>
+        <div class="fifth-right-column-text">174</div>
+        <div class="fifth-divider-line"></div>
+        <div class="sixth-column-row"></div>
+        <div class="sixth-left-column-text">Baujahr</div>
+        <div class="sixth-right-column-text">2015</div>
+        <div class="sixth-divider-line"></div>
+        <div class="seventh-column-row"></div>
+        <div class="seventh-left-column-text">Zustand</div>
+        <div class="seventh-right-column-text">sehr guter Zustand</div>
+        <div class="seventh-divider-line"></div>
+        <div class="eighth-column-row"></div>
+        <div class="eighth-left-column-text">Energieausweistyp</div>
+        <div class="eighth-right-column-text">Bedarfsausweis</div>
+        <div class="eighth-divider-line"></div>
+        <div class="ninth-column-row"></div>
+        <div class="ninth-left-column-text">Heizungsart</div>
+        <div class="ninth-right-column-text">Gas</div>
+        <div class="ninth-divider-line"></div>
+        <div class="tenth-column-row"></div>
+        <div class="tenth-left-column-text">Energiekennwert</div>
+        <div class="tenth-right-column-text">113,5kWh/(m²*a) gültig bis April 2025</div>
+        <!-- divider below the tenth row commented -->
+        <!-- <div class="tenth-divider-line"></div> -->
+        <div class="kaufpreis-column-row"></div>
+        <div class="kaufpreis-left-column-text">Kaufpreis</div>
+        <div class="kaufpreis-right-column-text">CHF 2'260'000.–</div>
+        <div class="kaufpreis-divider-line"></div>
     </div>
 </body>
 </html>
