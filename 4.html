@@ -3,7 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/Helvetica.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/Helvetica-Bold.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Helvetica';
+            src: url('/fonts/helvetica-light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Roboto';
+            src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Roboto';
+            src: url('/fonts/Roboto-Light.ttf') format('truetype');
+            font-weight: 300;
+            font-style: normal;
+        }
         html, body {
             margin: 0;
             padding: 0;
@@ -19,11 +50,61 @@
             position: relative;
             overflow-y: auto;
         }
+        .logo {
+            position: absolute;
+            top: 56px;
+            left: 885px;
+            width: 289px;
+            height: 88px;
+        }
+        .page-number {
+            position: absolute;
+            top: 1653px;
+            left: 1038px;
+            width: 113px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 38px;
+            letter-spacing: -0.66px; /* -3% of 22px */
+            color: #1F2A44;
+            text-align: right;
+        }
+        .contact-phone {
+            position: absolute;
+            top: 1641px;
+            left: 89px;
+            width: 352px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: 0;
+            color: #1F2A44;
+        }
+        .contact-email {
+            position: absolute;
+            top: 1662px;
+            left: 89px;
+            width: 352px;
+            height: 38px;
+            font-family: 'Helvetica', Arial, sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 38px;
+            letter-spacing: 0;
+            color: #1F2A44;
+        }
     </style>
 </head>
 <body>
     <div class="page">
-        <h1>Page 4</h1>
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <div class="page-number">Seite 4/9</div>
+        <div class="contact-phone">+41 44 123 45 67</div>
+        <div class="contact-email">info@immobilienpartner.ch</div>
     </div>
 </body>
 </html>
